@@ -1,3 +1,3 @@
 package com.marin.swk
 
-data class User(var name: String, var phoneNumber: Int, var email: String)
+data class User(val name: String, val phoneNumber: Int, val email: String)
