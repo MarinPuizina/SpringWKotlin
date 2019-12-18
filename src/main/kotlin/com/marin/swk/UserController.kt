@@ -16,4 +16,9 @@ class UserController(val environment: Environment) {
         return "Service is working on a port ${environment.getProperty("local.server.port")}"
     }
 
+    @GetMapping
+    fun getUser(): User {
+        return User("Marin", 12312312, "bla@bla.com")
+    }
+
 }
